@@ -123,6 +123,60 @@ GeneticAlgorithm/fast:
 	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/build
 .PHONY : GeneticAlgorithm/fast
 
+cities.o: cities.cpp.o
+
+.PHONY : cities.o
+
+# target to build an object file
+cities.cpp.o:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/cities.cpp.o
+.PHONY : cities.cpp.o
+
+cities.i: cities.cpp.i
+
+.PHONY : cities.i
+
+# target to preprocess a source file
+cities.cpp.i:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/cities.cpp.i
+.PHONY : cities.cpp.i
+
+cities.s: cities.cpp.s
+
+.PHONY : cities.s
+
+# target to generate assembly for a file
+cities.cpp.s:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/cities.cpp.s
+.PHONY : cities.cpp.s
+
+city.o: city.cpp.o
+
+.PHONY : city.o
+
+# target to build an object file
+city.cpp.o:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/city.cpp.o
+.PHONY : city.cpp.o
+
+city.i: city.cpp.i
+
+.PHONY : city.i
+
+# target to preprocess a source file
+city.cpp.i:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/city.cpp.i
+.PHONY : city.cpp.i
+
+city.s: city.cpp.s
+
+.PHONY : city.s
+
+# target to generate assembly for a file
+city.cpp.s:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/city.cpp.s
+.PHONY : city.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +213,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... GeneticAlgorithm"
 	@echo "... edit_cache"
+	@echo "... cities.o"
+	@echo "... cities.i"
+	@echo "... cities.s"
+	@echo "... city.o"
+	@echo "... city.i"
+	@echo "... city.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

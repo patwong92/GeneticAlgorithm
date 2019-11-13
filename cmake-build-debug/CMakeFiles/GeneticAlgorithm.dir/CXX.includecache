@@ -6,7 +6,23 @@
 
 #IncludeRegexTransform: 
 
+/cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/cities.hpp
+vector
+-
+city.hpp
+/cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/city.hpp
+
+/cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/city.hpp
+string
+-
+stdexcept
+-
+
 /cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/main.cpp
 iostream
 -
+random
+-
+cities.hpp
+/cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/cities.hpp
 

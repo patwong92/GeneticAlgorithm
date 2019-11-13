@@ -80,6 +80,21 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/cities.cpp">
+			<Option target="GeneticAlgorithm"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/cities.hpp">
+			<Option target="GeneticAlgorithm"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/city.cpp">
+			<Option target="GeneticAlgorithm"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/city.hpp">
+			<Option target="GeneticAlgorithm"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/constants.hpp">
+			<Option target="GeneticAlgorithm"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/main.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
