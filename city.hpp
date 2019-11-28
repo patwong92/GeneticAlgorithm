@@ -22,6 +22,8 @@ public:
             throw invalid_argument("Invalid coordinates!");
     }
 
+    void mySwap(city& first, city& second);city operator=(city rhs);
+
     string getName();
     int getX();
     int getY();

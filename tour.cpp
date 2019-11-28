@@ -56,6 +56,18 @@ void tour::addCity(city* c) {
     }
 }
 
+void tour::mySwap(tour& first, tour& second)
+{
+    using std::swap;
+    swap(first.travel, second.travel);
+    swap(first.fitness, second.fitness);
+}
+
+tour tour::operator=(tour rhs) {
+    mySwap(*this, rhs);
+    return *this;
+}
+
 city* tour::getCity(int index) {
     return travel[index];
 }

@@ -28,8 +28,19 @@ public:
             tour* c = new tour(s);
             p.push_back(c);
         }
-    }
 
+        findEliteTour(); //Puts elite tour on index 0
+        while (nextp.size() < pSize) {
+            crossTour();
+        }
+        cout << "Hello world!" << endl;
+
+    }
+    ~population(){
+//        for (int i = 0; i < pSize; i++) {
+//            delete p[i];
+//        }
+    }
     int generateRandomNumber(int, int);
     void swap(tour&, tour&);
     void clearSets();

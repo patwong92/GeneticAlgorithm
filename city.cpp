@@ -27,3 +27,16 @@ ostream& operator<<(ostream& os, const city& obj)
     os << obj.toString();
     return os;
 }
+
+city city::operator=(city rhs) {
+    mySwap(*this, rhs);
+    return *this;
+}
+
+void city::mySwap(city& first, city& second)
+{
+    using std::swap;
+    swap(first.name, second.name);
+    swap(first.x, second.x);
+    swap(first.y, second.y);
+}

@@ -10,7 +10,7 @@ Hong_Kong 532 155
 Beijing 967 456
 Istanbul 979 512
 New_Delhi 745 254
-London 89 240
+Cairo 89 240
 Paris 30 472
 Madrid 96 685
 Cologne 490 682

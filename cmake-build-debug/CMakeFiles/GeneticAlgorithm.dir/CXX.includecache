@@ -28,18 +28,6 @@ constants.hpp
 
 /cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/constants.hpp
 
-/cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/main.cpp
-iostream
--
-random
--
-algorithm
--
-tour.hpp
-/cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/tour.hpp
-population.hpp
-/cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/population.hpp
-
 /cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/population.cpp
 population.hpp
 /cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/population.hpp

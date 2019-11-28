@@ -10,7 +10,7 @@ void population::swap(tour& a, tour &b) {
     b = tmp;
 }
 
-int generateRandomNumber(int a, int b) {
+int population::generateRandomNumber(int a, int b) {
     random_device rd; // a random number generator
     mt19937 generator(rd()); // calls operator()
     uniform_int_distribution<> distribution(a, b);
@@ -79,10 +79,13 @@ void population::crossTour() {
     tour* t = new tour();
 
     for (int i = 0; i < random_index; i++) {
-        t->addCity(elite_tour_set1->getCity(i));
+        city* unvisited_city = elite_tour_set1->getCity(i);
+        t->addCity(unvisited_city);
     }
 
-    for (int i = 0; i < elite_tour_set2->getCities(); i++) {
+    int numOfCities = elite_tour_set2->getCities();
+
+    for (int i = 0; i < numOfCities; i++) {
         bool unique = true;
 
         city* c = elite_tour_set2->getCity(i);
@@ -97,7 +100,7 @@ void population::crossTour() {
         }
 
         if (unique) {
-            t->addCity(elite_tour_set1->getCity(i));
+            t->addCity(elite_tour_set2->getCity(i));
         }
     }
     nextp.push_back(t);
@@ -128,7 +131,7 @@ void population::findEliteTour() {
 
     swap(*elite_tour, *p[0]);
 
-    nextp.push_back(elite_tour);
+    nextp.push_back(p[0]);
 }
 
 double population::getEliteFitness() {

@@ -27,10 +27,13 @@ public:
     }
 
     ~tour() {
-        for (vector<city*>::iterator i = travel.begin(); i != travel.end(); i++) {
-            delete *i;
-        }
+//        for (vector<city*>::iterator i = travel.begin(); i != travel.end(); i++) {
+//            delete *i;
+//        }
     }
+
+    void mySwap(tour& first, tour& second);
+    tour operator=(tour rhs);
     double getFitness();
     int getCities();
     void print() const;
