@@ -1,32 +1,32 @@
-Toronto
-Vancouver
-New York City
-San Francisco
-Athens
-London
-Tokyo
-Dubai
-Hong Kong
-Beijing
-Istanbul
-New_Delhi
-London
-Paris
-Madrid
-Cologne
-Stockholm
-Cape Town
-Dallas
-Chicago
-Miami
-Havana
-Moscow
-Ho Chi Minh City
-Sydney
-Doha
-Taipei
-Sapporo
-Honolulu
-Singapore
-Sao Paulo
-Seoul\
+Toronto 723 748
+Vancouver 536 679
+New_York_City 794 769
+San_Francisco 551 366
+Athens 661 826
+London 635 341
+Tokyo 32 245
+Dubai 141 737
+Hong_Kong 532 155
+Beijing 967 456
+Istanbul 979 512
+New_Delhi 745 254
+London 89 240
+Paris 30 472
+Madrid 96 685
+Cologne 490 682
+Stockholm 208 76
+Cape_Town 541 997
+Dallas 133 414
+Chicago 89 862
+Miami 932 718
+Havana 187 871
+Moscow 116 717
+Ho_Chi_Minh_City 599 804
+Sydney 737 486
+Doha 289 370
+Taipei 115 59
+Sapporo 596 361
+Honolulu 26 595
+Singapore 818 871
+Sao_Paulo 640 746
+Seoul 502 355

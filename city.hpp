@@ -7,6 +7,7 @@
 
 #include <string>
 #include <stdexcept>
+#include "constants.hpp"
 
 using namespace std;
 
@@ -17,7 +18,7 @@ private:
     int y;
 public:
     city(string name, int x, int y): name(name), x(x), y(y) {
-        if (x >= 1000 || x <= 0 || y >= 1000 || y <= 0)
+        if (x > MAP_BOUNDARY || x < 0 || y > MAP_BOUNDARY || y < 0)
             throw invalid_argument("Invalid coordinates!");
     }
 

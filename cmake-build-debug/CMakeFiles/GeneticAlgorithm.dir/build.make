@@ -83,9 +83,35 @@ CMakeFiles/GeneticAlgorithm.dir/city.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GeneticAlgorithm.dir/city.cpp.s"
 	C:/cygwin64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/city.cpp" -o CMakeFiles/GeneticAlgorithm.dir/city.cpp.s
 
+CMakeFiles/GeneticAlgorithm.dir/tour.cpp.o: CMakeFiles/GeneticAlgorithm.dir/flags.make
+CMakeFiles/GeneticAlgorithm.dir/tour.cpp.o: ../tour.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/tour.cpp.o"
+	C:/cygwin64/bin/g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/tour.cpp.o -c "/cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/tour.cpp"
+
+CMakeFiles/GeneticAlgorithm.dir/tour.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GeneticAlgorithm.dir/tour.cpp.i"
+	C:/cygwin64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/tour.cpp" > CMakeFiles/GeneticAlgorithm.dir/tour.cpp.i
+
+CMakeFiles/GeneticAlgorithm.dir/tour.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GeneticAlgorithm.dir/tour.cpp.s"
+	C:/cygwin64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/tour.cpp" -o CMakeFiles/GeneticAlgorithm.dir/tour.cpp.s
+
+CMakeFiles/GeneticAlgorithm.dir/population.cpp.o: CMakeFiles/GeneticAlgorithm.dir/flags.make
+CMakeFiles/GeneticAlgorithm.dir/population.cpp.o: ../population.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/population.cpp.o"
+	C:/cygwin64/bin/g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/population.cpp.o -c "/cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/population.cpp"
+
+CMakeFiles/GeneticAlgorithm.dir/population.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GeneticAlgorithm.dir/population.cpp.i"
+	C:/cygwin64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/population.cpp" > CMakeFiles/GeneticAlgorithm.dir/population.cpp.i
+
+CMakeFiles/GeneticAlgorithm.dir/population.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GeneticAlgorithm.dir/population.cpp.s"
+	C:/cygwin64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/population.cpp" -o CMakeFiles/GeneticAlgorithm.dir/population.cpp.s
+
 CMakeFiles/GeneticAlgorithm.dir/cities.cpp.o: CMakeFiles/GeneticAlgorithm.dir/flags.make
 CMakeFiles/GeneticAlgorithm.dir/cities.cpp.o: ../cities.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/cities.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/cities.cpp.o"
 	C:/cygwin64/bin/g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/cities.cpp.o -c "/cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/cities.cpp"
 
 CMakeFiles/GeneticAlgorithm.dir/cities.cpp.i: cmake_force
@@ -100,6 +126,8 @@ CMakeFiles/GeneticAlgorithm.dir/cities.cpp.s: cmake_force
 GeneticAlgorithm_OBJECTS = \
 "CMakeFiles/GeneticAlgorithm.dir/main.cpp.o" \
 "CMakeFiles/GeneticAlgorithm.dir/city.cpp.o" \
+"CMakeFiles/GeneticAlgorithm.dir/tour.cpp.o" \
+"CMakeFiles/GeneticAlgorithm.dir/population.cpp.o" \
 "CMakeFiles/GeneticAlgorithm.dir/cities.cpp.o"
 
 # External object files for target GeneticAlgorithm
@@ -107,10 +135,12 @@ GeneticAlgorithm_EXTERNAL_OBJECTS =
 
 GeneticAlgorithm.exe: CMakeFiles/GeneticAlgorithm.dir/main.cpp.o
 GeneticAlgorithm.exe: CMakeFiles/GeneticAlgorithm.dir/city.cpp.o
+GeneticAlgorithm.exe: CMakeFiles/GeneticAlgorithm.dir/tour.cpp.o
+GeneticAlgorithm.exe: CMakeFiles/GeneticAlgorithm.dir/population.cpp.o
 GeneticAlgorithm.exe: CMakeFiles/GeneticAlgorithm.dir/cities.cpp.o
 GeneticAlgorithm.exe: CMakeFiles/GeneticAlgorithm.dir/build.make
 GeneticAlgorithm.exe: CMakeFiles/GeneticAlgorithm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable GeneticAlgorithm.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable GeneticAlgorithm.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GeneticAlgorithm.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
