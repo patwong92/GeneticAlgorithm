@@ -6,9 +6,19 @@
 
 using namespace std;
 
+/**
+ * Driver to approximate the solution of the travelling salesman problem
+ * @author Patrick W
+ */
 int main() {
-    cities k{"cities.txt"};
+    //Reads a file containing a list of cities and stores them in an object
+    cities k{"cities.txt", CITIES_IN_TOUR};
+
+    //Constructor will run the genetic algorithm to find the local minimum total distance among cities
     population pop{k, POPULATION_SIZE};
+
+    //Print the results after using the genetic algorithm
+    pop.printResults();
 
     return 0;
 }

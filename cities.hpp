@@ -5,19 +5,29 @@
 #ifndef GENETICALGORITHM_CITIES_HPP
 #define GENETICALGORITHM_CITIES_HPP
 
-
 #include <random>
 #include <iostream>
 #include <fstream>
 #include <sstream>
 #include "city.hpp"
 
+/**
+ * Cities class
+ * @author Patrick W
+ */
 class cities {
 private:
     vector<city*> map;
     string replaceCharacters(string, char, char);
 public:
-    cities(string filename) {
+    /**
+     * Cities constructor
+     * @param filename
+     *      A string representing the file name
+     * @param num_of_cities
+     *      Number of cities to read from file
+     */
+    cities(string filename, int num_of_cities) {
         ifstream f{filename};
         string line;
 
@@ -26,7 +36,9 @@ public:
             exit(1);
         }
 
-        while(getline(f, line)) {
+        int n = 0;
+
+        while(getline(f, line) && n < num_of_cities) {
             line.pop_back(); //Erases the '/r' character
             istringstream iss{line};
             string a_city;
@@ -41,9 +53,11 @@ public:
 
             city* c = new city(a_city, latitude, longitude);
             map.push_back(c);
+            n++;
         }
     }
 
+    //Function prototypes
     vector<city*> getList();
     void print();
 };

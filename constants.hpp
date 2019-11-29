@@ -7,11 +7,11 @@
 
 #define CITIES_IN_TOUR 32
 #define POPULATION_SIZE 32
-#define SHUFFLES 64
 #define ITERATIONS 1000
 #define MAP_BOUNDARY 1000
 #define PARENT_POOL_SIZE 5
 #define MUTATION_RATE 0.15 //15%
-#define NUMBER_OF_ELITES 1
+#define SCALAR_CONSTANT 10000 //Used to calculate fitness
+#define IMPROVEMENT_FACTOR 1.20 //Improve by 20%
 
 #endif //GENETICALGORITHM_CONSTANTS_HPP

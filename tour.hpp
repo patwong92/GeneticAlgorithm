@@ -7,36 +7,48 @@
 
 #include "cities.hpp"
 
+/**
+ * Tour class
+ * @author Patrick W
+ */
 class tour {
 private:
     vector<city*> travel;
+    double total_distance;
     double fitness;
 
-    void shuffle_cities();
-    double calculate_distance(city*, city*);
-    double calculate_fitness();
-
 public:
-    tour() : fitness(0) {}
+    /**
+     * Default constructor
+     */
+    tour() : total_distance(0) {}
 
+    /**
+     * Overloaded constructor
+     * @param cities c
+     *      Class that contains all the cities
+     */
     tour(cities c) {
         travel = c.getList();
-
-        shuffle_cities();
-        fitness = calculate_fitness();
+        shuffleCities();
+        getTotalDistance();
+        getFitness();
     }
 
-    ~tour() {
-//        for (vector<city*>::iterator i = travel.begin(); i != travel.end(); i++) {
-//            delete *i;
-//        }
-    }
+    /**
+     * Destructor
+     */
+    ~tour() {}
 
+    //Function prototypes
+    void shuffleCities();
+    double calculateDistance(city*, city*);
+    double getTotalDistance();
+    double getTheTotalDistance();
     void mySwap(tour& first, tour& second);
     tour operator=(tour rhs);
     double getFitness();
     int getCities();
-    void print() const;
     void addCity(city*);
     city* getCity(int);
 };
