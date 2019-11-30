@@ -24,7 +24,7 @@ private:
     tour* elite_tour;
     //Initial tour
     tour* base_tour;
-
+private:
     //Quality of the base tour
     double base_fitness;
     //Quality of the elite tour
@@ -70,48 +70,6 @@ public:
         base_fitness = elite_fitness;
 
         fitness_ratio = elite_fitness/base_fitness;
-
-        //Run genetic algorithm
-        while (fitness_ratio < IMPROVEMENT_FACTOR || iteration < ITERATIONS) {
-            if (iteration >= ITERATIONS) {
-                break;
-            }
-
-            if (fitness_ratio > IMPROVEMENT_FACTOR) {
-                break;
-            }
-
-            iteration++;
-
-            if (iteration > 1) {
-                p = nextp;
-                nextp.clear();
-                clearSets();
-            }
-
-            //Swap elite_tour and the first index of the population of tours
-            mySwap(*elite_tour, *p[0]);
-            //Add to the next generation.
-            nextp.push_back(p[0]);
-
-            //Do cross tour POPULATION_SIZE - 1 times
-            while (nextp.size() < pSize) {
-                crossTour();
-            }
-
-            //Generate number and index of tours to mutate
-            vector<int> tours_to_mutate = generateRandomTourSelection(pSize, 0.25);
-            mutateSelectedTours(tours_to_mutate);
-
-            tour* current_elite = elite_tour;
-            evaluateFitness();
-            tour* new_elite = elite_tour;
-
-            fitness_ratio = elite_fitness/base_fitness;
-
-            printIterationResult(iteration, current_elite, new_elite, fitness_ratio);
-        }
-
     }
 
     /*
@@ -124,6 +82,7 @@ public:
     }
 
     //Function prototypes
+    void runGeneticAlgorithm();
     int generateRandomNumber(int, int);
     vector<int> generateRandomTourSelection(int, double);
     void mySwap(tour&, tour&);
@@ -135,6 +94,11 @@ public:
     void printIterationResult(int, tour*, tour*, double);
     void mutateSelectedTours(vector<int>);
     void mutateTour(tour*, double);
+    tour *getEliteTour() const;
+    tour *getBaseTour() const;
+    double getBaseFitness() const;
+    double getEliteFitness() const;
+    double getFitnessRatio() const;
 };
 
 

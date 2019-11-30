@@ -21,7 +21,7 @@ public:
     /**
      * Default constructor
      */
-    tour() : total_distance(0) {}
+    tour() : total_distance(0), fitness(0) {}
 
     /**
      * Overloaded constructor

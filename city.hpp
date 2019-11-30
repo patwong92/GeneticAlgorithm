@@ -45,7 +45,10 @@ public:
     int getY();
     friend ostream& operator<<(ostream&, const city&);
     string toString() const;
+    friend bool operator==(const city&, const city&);
+    friend bool operator!=(const city&, const city&);
 };
+
 
 
 #endif //GENETICALGORITHM_CITY_HPP

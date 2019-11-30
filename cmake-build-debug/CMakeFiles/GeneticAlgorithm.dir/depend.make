@@ -30,3 +30,5 @@ CMakeFiles/GeneticAlgorithm.dir/tour.cpp.o: ../constants.hpp
 CMakeFiles/GeneticAlgorithm.dir/tour.cpp.o: ../tour.cpp
 CMakeFiles/GeneticAlgorithm.dir/tour.cpp.o: ../tour.hpp
 
+CMakeFiles/GeneticAlgorithm.dir/unit_tests.cpp.o: ../unit_tests.cpp
+

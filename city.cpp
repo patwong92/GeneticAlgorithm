@@ -83,3 +83,33 @@ void city::mySwap(city& first, city& second)
     swap(first.x, second.x);
     swap(first.y, second.y);
 }
+
+/*
+ * Comparison operator (==)
+ * @param lhs
+ *      City reference
+ * @param rhs
+ *      City reference
+ * @return true or false
+ */
+bool operator==(const city& lhs, const city& rhs)
+{
+    if (lhs.name == rhs.name && lhs.x == rhs.x && lhs.y == rhs.y) {
+        return true;
+    }
+
+    return false;
+}
+
+/*
+ * Comparison operator (!=)
+ * @param lhs
+ *      City reference
+ * @param rhs
+ *      City reference
+ * @return true or false
+ */
+bool operator!=(const city& lhs, const city& rhs)
+{
+    return !(lhs == rhs);
+}

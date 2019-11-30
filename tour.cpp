@@ -47,12 +47,15 @@ double tour::getTotalDistance()
 {
     total_distance = 0;
 
-    for (int i = 0; i < (travel.size() - 1); i++) {
-        total_distance += calculateDistance(travel[i], travel[i+1]);
+    if (travel.size() > 1) {
+        for (int i = 0; i < (travel.size() - 1); i++) {
+            total_distance += calculateDistance(travel[i], travel[i+1]);
+        }
+
+        //Adds the distance between the first and last cities in a tour to complete the tour
+        total_distance += calculateDistance(travel[travel.size()-1] , travel[0]);
     }
 
-    //Adds the distance between the first and last cities in a tour to complete the tour
-    total_distance += calculateDistance(travel[travel.size()-1] , travel[0]);
     return total_distance;
 }
 

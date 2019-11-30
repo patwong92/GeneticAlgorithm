@@ -258,6 +258,33 @@ tour.cpp.s:
 	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/tour.cpp.s
 .PHONY : tour.cpp.s
 
+unit_tests.o: unit_tests.cpp.o
+
+.PHONY : unit_tests.o
+
+# target to build an object file
+unit_tests.cpp.o:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/unit_tests.cpp.o
+.PHONY : unit_tests.cpp.o
+
+unit_tests.i: unit_tests.cpp.i
+
+.PHONY : unit_tests.i
+
+# target to preprocess a source file
+unit_tests.cpp.i:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/unit_tests.cpp.i
+.PHONY : unit_tests.cpp.i
+
+unit_tests.s: unit_tests.cpp.s
+
+.PHONY : unit_tests.s
+
+# target to generate assembly for a file
+unit_tests.cpp.s:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/unit_tests.cpp.s
+.PHONY : unit_tests.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -282,6 +309,9 @@ help:
 	@echo "... tour.o"
 	@echo "... tour.i"
 	@echo "... tour.s"
+	@echo "... unit_tests.o"
+	@echo "... unit_tests.i"
+	@echo "... unit_tests.s"
 .PHONY : help
 
 

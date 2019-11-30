@@ -21,6 +21,50 @@ void population::mySwap(tour& a, tour &b)
     b = tmp;
 }
 
+void population::runGeneticAlgorithm()
+{
+    //Run genetic algorithm
+    while (fitness_ratio < IMPROVEMENT_FACTOR || iteration < ITERATIONS) {
+        if (iteration >= ITERATIONS) {
+            break;
+        }
+
+        if (fitness_ratio > IMPROVEMENT_FACTOR) {
+            break;
+        }
+
+        iteration++;
+
+        if (iteration > 1) {
+            p = nextp;
+            nextp.clear();
+            clearSets();
+        }
+
+        //Swap elite_tour and the first index of the population of tours
+        mySwap(*elite_tour, *p[0]);
+        //Add to the next generation.
+        nextp.push_back(p[0]);
+
+        //Do cross tour POPULATION_SIZE - 1 times
+        while (nextp.size() < pSize) {
+            crossTour();
+        }
+
+        //Generate number and index of tours to mutate
+        vector<int> tours_to_mutate = generateRandomTourSelection(pSize, TOUR_MUTATION_RATE);
+        mutateSelectedTours(tours_to_mutate);
+
+        tour* current_elite = elite_tour;
+        evaluateFitness();
+        tour* new_elite = elite_tour;
+
+        fitness_ratio = elite_fitness/base_fitness;
+
+        printIterationResult(iteration, current_elite, new_elite, fitness_ratio);
+    }
+}
+
 /**
  * Generates a random number between two numbers inclusive
  * @param a
@@ -285,4 +329,49 @@ void population::printIterationResult(int i, tour* current_elite, tour* new_elit
     string improvement = new_elite->getFitness() > current_elite->getFitness()? "yes" : "no";
     cout << "Is there improvement? " << improvement << endl;
     cout << "Improvement over base ratio: " << f << endl;
+}
+
+/**
+ * Getter for elite tour
+ * @return elite_tour
+ *      The current elite tour
+ */
+tour *population::getEliteTour() const {
+    return elite_tour;
+}
+
+/**
+ * Getter for base tour
+ * @return base_tour
+ *      The first elite tour
+ */
+tour *population::getBaseTour() const {
+    return base_tour;
+}
+
+/**
+ * Getter for base fitness
+ * @return base_fitness
+ *      The initial elite fitness
+ */
+double population::getBaseFitness() const {
+    return base_fitness;
+}
+
+/**
+ * Getter for elite fitness
+ * @return elite_fitness
+ *      Current best fitness in a population of tours
+ */
+double population::getEliteFitness() const {
+    return elite_fitness;
+}
+
+/**
+ * Getter for fitness ratio
+ * @return fitness_ratio
+ *      The ratio between base and elite fitness
+ */
+double population::getFitnessRatio() const {
+    return fitness_ratio;
 }

@@ -80,6 +80,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/catch.hpp">
+			<Option target="GeneticAlgorithm"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/cities.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
@@ -108,6 +111,9 @@
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/tour.hpp">
+			<Option target="GeneticAlgorithm"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/unit_tests.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/pwong/Documents/BCIT Level 3/comp3522/aftermidterm/GeneticAlgorithm/CMakeLists.txt">
